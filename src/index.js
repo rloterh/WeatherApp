@@ -33,7 +33,7 @@ const weather = {
     el.humidity.innerText = `Humidity: ${humidity}%`;
     el.wind.innerText = `Wind speed: ${speed} km/h`;
     el.weather.classList.remove('loading');
-    el.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?' + name + '')";
+    el.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')";
     el.celsiusButton.addEventListener('click', () => {
       el.temperature.innerText = `${temp}°C`;
       el.celsiusButton.classList.add('button-border');
