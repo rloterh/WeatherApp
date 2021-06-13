@@ -24,7 +24,7 @@ The rubric of this project is to develop a weather web application using vanilla
 
 
 ## App Screenshot
-![screenshot-weather-app](https://user-images.githubusercontent.com/12745474/121794039-fa82b800-cbfc-11eb-8880-f96f225967bb.png)
+![screenshot-weather-app](https://user-images.githubusercontent.com/12745474/121814450-1b80f280-cc69-11eb-9cc7-e610566212ec.png)
 
 
 ## Built With
