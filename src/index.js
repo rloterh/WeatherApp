@@ -1,4 +1,4 @@
-// import './css/styles.css';
+import './css/styles.css';
 import * as el from './components/elements';
 import Temp from './helpers/convertTemperature';
 import weatherKey from './key';
