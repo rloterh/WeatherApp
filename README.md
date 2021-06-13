@@ -3,7 +3,7 @@
 ![Microverse](https://img.shields.io/badge/-Microverse-007bff?style=for-the-badge)
 
 ## Description
-The rubric of this project is to build a weather web application  using e using vanilla javascript and a weather API. The waether information of a particular city at current date can be obtained keying in the name of that city into the search bar and pressing the search icon or hitting the Enter/ Return key. The current temperature is displayed in °C and °F. The current humidity and windspeed searched city are also displayed. The specification for this project is a part of The Odin Project.
+The rubric of this project is to develop a weather web application using vanilla javascript and a weather API. The weather information of a particular city at current date can be obtained by keying in the name of that city into the search bar and pressing the search icon or hitting the Enter/ Return key. The current temperature is displayed in °C or °F. The current humidity and windspeed of the searched city are also displayed as part of the weather details. The specification for this project is a part of The Odin Project.
 
 
 ## Library Directory 📙
@@ -99,7 +99,7 @@ Feel free to check the [issues page](https://github.com/rloterh/WeatherApp/issue
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-- [Unsplash.com](https://www.pexels.com/)
+- [Unsplash](https://www.pexels.com/)
 - [Open Weather API](https://openweathermap.org/)
 - [The Odin Project](https://www.theodinproject.com/)
 - [Microverse](https://www.microverse.org/)
