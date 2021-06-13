@@ -1,4 +1,4 @@
-import './css/styles.css';
+// import './css/styles.css';
 import * as el from './components/elements';
 import Temp from './helpers/convertTemperature';
 import weatherKey from './key';
@@ -29,14 +29,26 @@ const weather = {
     el.city.innerText = `Weather in ${name}`;
     el.weatherIcon.src = `https://openweathermap.org/img/wn/${icon}.png`;
     el.weatherDescription.innerText = description;
-    el.temperature.innerText = `${temp}°C/ ${Temp(Math.round(temp))}°F`;
+    el.temperature.innerText = `${temp}°C`;
     el.humidity.innerText = `Humidity: ${humidity}%`;
     el.wind.innerText = `Wind speed: ${speed} km/h`;
     el.weather.classList.remove('loading');
     el.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?' + name + '')";
+    el.celsiusButton.addEventListener('click', () => {
+      el.temperature.innerText = `${temp}°C`;
+      el.celsiusButton.classList.add('button-border');
+      el.fahrenheitButton.classList.remove('button-border');
+    });
+    el.fahrenheitButton.addEventListener('click', () => {
+      el.temperature.innerText = `${Temp(Math.round(temp))}°F`;
+      el.fahrenheitButton.classList.add('button-border');
+      el.celsiusButton.classList.remove('button-border');
+    });
   },
   search() {
     this.getWeatherData(el.searchBar.value);
+    el.celsiusButton.classList.add('button-border');
+    el.fahrenheitButton.classList.remove('button-border');
   },
 };
 
@@ -49,5 +61,5 @@ el.searchBar.addEventListener('keyup', (event) => {
     weather.search();
   }
 });
-
+el.celsiusButton.classList.add('button-border');
 weather.getWeatherData('Accra');
