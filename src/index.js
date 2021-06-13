@@ -13,10 +13,6 @@ const weather = {
         this.apiKey}`,
     )
       .then((response) =>
-        // if (!response.ok) {
-        //   alert('No weather found.');
-        //   throw new Error('No weather found.');
-        // }
         response.json()).catch((error) => (error))
       .then((data) => this.displayWeather(data));
   },
