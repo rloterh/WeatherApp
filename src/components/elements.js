@@ -8,6 +8,8 @@ const { body } = document;
 const searchBar = document.querySelector('.search-bar');
 const searchButton = document.querySelector('.search button');
 const humidity = document.querySelector('.humidity');
+const celsiusButton = document.querySelector('.menu-celsius');
+const fahrenheitButton = document.querySelector('.menu-fahrenhiet');
 
 export {
   city,
@@ -20,4 +22,6 @@ export {
   searchBar,
   searchButton,
   humidity,
+  celsiusButton,
+  fahrenheitButton
 };
