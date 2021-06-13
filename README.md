@@ -20,7 +20,7 @@ The rubric of this project is to build a weather web application  using e using 
 
 
 ## Live Demo
-[BurgerBest Restaurant page live demo](https://amazing-jang-f4c58e.netlify.app/)
+[Weather App live demo](https://amazing-jang-f4c58e.netlify.app/)
 
 
 ## App Screenshot
@@ -100,7 +100,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 - [Unsplash.com](https://www.pexels.com/)
-- [Open Weather](https://openweathermap.org/)
+- [Open Weather API](https://openweathermap.org/)
 - [The Odin Project](https://www.theodinproject.com/)
 - [Microverse](https://www.microverse.org/)
 
