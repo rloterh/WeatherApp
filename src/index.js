@@ -39,3 +39,15 @@ let weather = {
     this.getWeatherData(el.searchBar.value);
   },
 };
+
+el.searchButton.addEventListener('click', function () {
+  weather.search();
+});
+
+el.searchBar.addEventListener('keyup', function (event) {
+    if (event.key == 'Enter') {
+      weather.search();
+    }
+  });
+
+weather.getWeatherData('Accra');
