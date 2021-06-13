@@ -23,5 +23,5 @@ export {
   searchButton,
   humidity,
   celsiusButton,
-  fahrenheitButton
+  fahrenheitButton,
 };

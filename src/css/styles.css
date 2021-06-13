@@ -22,7 +22,7 @@ body {
   color: white;
   font-size: 80%;
   padding: 0.6em 2em;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   width: 100%;
   height: 40px;
 }
@@ -43,7 +43,7 @@ body {
 .menu-fahrenhiet:active {
   border: 1px solid #fff;
   cursor: pointer;
-  }
+}
 
 .content {
   height: 100%;

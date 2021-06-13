@@ -5,28 +5,26 @@ import weatherKey from './key';
 
 const weather = {
   apiKey: weatherKey,
-  async getWeatherData (city) {
+  async getWeatherData(city) {
     await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${
         city
       }&units=metric&appid=${
         this.apiKey}`,
     )
-      .then((response) => {
+      .then((response) =>
         // if (!response.ok) {
         //   alert('No weather found.');
         //   throw new Error('No weather found.');
         // }
-        return response.json();
-
-      }).catch((error) => (error))
+        response.json()).catch((error) => (error))
       .then((data) => this.displayWeather(data));
   },
   async displayWeather(data) {
     const { name } = data;
     const { icon, description } = data.weather[0];
     const { temp, humidity } = data.main;
-    const { speed } =  data.wind;
+    const { speed } = data.wind;
     el.city.innerText = `Weather in ${name}`;
     el.weatherIcon.src = `https://openweathermap.org/img/wn/${icon}.png`;
     el.weatherDescription.innerText = description;
@@ -34,7 +32,7 @@ const weather = {
     el.humidity.innerText = `Humidity: ${humidity}%`;
     el.wind.innerText = `Wind speed: ${speed} km/h`;
     el.weather.classList.remove('loading');
-    el.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')";
+    el.body.style.backgroundImage = `url('https://source.unsplash.com/1600x900/?${name}')`;
     el.celsiusButton.addEventListener('click', () => {
       el.temperature.innerText = `${temp}°C`;
       el.celsiusButton.classList.add('button-border');
