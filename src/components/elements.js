@@ -4,7 +4,7 @@ const weatherDescription = document.querySelector('.description');
 const temperature = document.querySelector('.temp');
 const wind = document.querySelector('.wind');
 const weather = document.querySelector('.weather');
-const body = document.body;
+const { body } = document;
 const searchBar = document.querySelector('.search-bar');
 const searchButton = document.querySelector('.search button');
 const humidity = document.querySelector('.humidity');
@@ -19,5 +19,5 @@ export {
   body,
   searchBar,
   searchButton,
-  humidity
+  humidity,
 };
