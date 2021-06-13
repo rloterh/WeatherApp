@@ -5,27 +5,28 @@ import weatherKey from './key';
 
 const weather = {
   apiKey: weatherKey,
-  getWeatherData(city) {
-    fetch(
+  async getWeatherData (city) {
+    await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${
         city
       }&units=metric&appid=${
         this.apiKey}`,
     )
       .then((response) => {
-        if (!response.ok) {
-          alert('No weather found.');
-          throw new Error('No weather found.');
-        }
+        // if (!response.ok) {
+        //   alert('No weather found.');
+        //   throw new Error('No weather found.');
+        // }
         return response.json();
-      })
+
+      }).catch((error) => (error))
       .then((data) => this.displayWeather(data));
   },
-  displayWeather(data) {
+  async displayWeather(data) {
     const { name } = data;
     const { icon, description } = data.weather[0];
     const { temp, humidity } = data.main;
-    const { speed } = data.wind;
+    const { speed } =  data.wind;
     el.city.innerText = `Weather in ${name}`;
     el.weatherIcon.src = `https://openweathermap.org/img/wn/${icon}.png`;
     el.weatherDescription.innerText = description;
