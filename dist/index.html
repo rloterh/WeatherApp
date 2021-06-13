@@ -7,7 +7,21 @@
   <title>Weather App</title>
 </head>
 <body>
-  <div id="content">
+  <div class="card">
+    <div class="search">
+      <input type="text" class="search-bar" placeholder="search city...">
+      <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+    </div>
+    <div class="weather loading">
+      <h2 class="city"></h2>
+      <h1 class="temp"></h1>
+      <div class="flex">
+        <img src="" alt="weather icon" class="icon"/>
+        <div class="description"></div>
+      </div>
+      <div class="humidity"></div>
+      <div class="wind"></div>
+    </div>
   </div>
   <script src="./main.js"></script>
 </body>
