@@ -1,4 +1,3 @@
 # .gitignore
 node_modules
-dist/index copy.html
-dist/menu-x.html
+#src/key.js
